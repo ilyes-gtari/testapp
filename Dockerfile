@@ -5,10 +5,10 @@ FROM openjdk:8-jre-alpine
 WORKDIR /app
 
 # Copy the JAR file into the container at /app
-COPY testapp-0.0.1-SNAPSHOT.jar .
+COPY target/testapp-0.0.1-SNAPSHOT.jar /app/app.jar
 
 # Expose the port that your application will run on
 EXPOSE 8082
 
 # Command to run your application
-CMD ["java", "-jar", "testapp-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "app.jar"]
