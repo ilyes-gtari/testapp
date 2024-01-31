@@ -16,4 +16,4 @@ spec:
         - name: spring-boot-app
           image: 23153122e351/testapp
           ports:
-            - containerPort: 8082
+            - containerPort: 8080
