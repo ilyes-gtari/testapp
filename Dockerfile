@@ -12,3 +12,5 @@ EXPOSE 8080
 
 # Command to run your application
 CMD ["java", "-jar", "app.jar"]
+
+# Test Commit !! 
